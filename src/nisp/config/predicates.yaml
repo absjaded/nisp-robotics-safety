@@ -1,0 +1,78 @@
+predicates:
+  - index: 0
+    name: "proximity_violation"
+    display: "Collision Imminent"
+    tier: 1
+    telemetry_channels: ["min_dist"]
+    threshold_key: "proximity"
+    lean4_field: "proximity_violation"
+    description: "Closing distance below safe stopping margin"
+
+  - index: 1
+    name: "torque_exceedance"
+    display: "Lane Breach"
+    tier: 1
+    telemetry_channels: ["tau_0", "tau_1", "tau_2", "tau_3", "tau_4", "tau_5"]
+    threshold_key: "torque"
+    lean4_field: "torque_violation"
+    description: "Vehicle drifts outside permitted lane envelope"
+
+  - index: 2
+    name: "geofence_breach"
+    display: "Closing Velocity High"
+    tier: 1
+    telemetry_channels: ["ee_pos", "zone_status"]
+    threshold_key: "geofence"
+    lean4_field: "geofence_violation"
+    description: "Approach velocity exceeds reaction-window threshold"
+
+  - index: 3
+    name: "velocity_limit"
+    display: "Attention Loss"
+    tier: 1
+    telemetry_channels: ["tcp_velocity"]
+    threshold_key: "velocity"
+    lean4_field: "velocity_violation"
+    description: "Driver/operator attention metrics below threshold"
+
+  - index: 4
+    name: "hesitate_spatial"
+    display: "Hesitate (Visual)"
+    tier: 2
+    telemetry_channels: ["min_dist", "closing_velocity"]
+    threshold_key: null
+    lean4_field: null
+    description: "Latent visual concern - scene activates safety-relevant parcels"
+
+  - index: 5
+    name: "hesitate_kinematic"
+    display: "Hesitate (Kinematic)"
+    tier: 2
+    telemetry_channels: ["tau_max", "q_dot_max"]
+    threshold_key: null
+    lean4_field: null
+    description: "Latent kinematic stress - sudden trajectory change anticipated"
+
+  - index: 6
+    name: "dissonance_relational"
+    display: "Dissonance (Relational)"
+    tier: 2
+    telemetry_channels: ["ee_pos", "human_aabb_center"]
+    threshold_key: null
+    lean4_field: null
+    description: "Relational conflict - actors converge in a non-nominal way"
+
+  - index: 7
+    name: "nominal_operations"
+    display: "Nominal Driving"
+    tier: 3
+    telemetry_channels: []
+    threshold_key: null
+    lean4_field: null
+    description: "Scene reads nominal - no anomalous risk detected"
+
+vocabulary_size: 8
+tier_thresholds:
+  tier_1_min_confidence: 0.95
+  tier_2_min_confidence: 0.60
+  tier_3_max_confidence: 0.60

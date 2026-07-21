@@ -1,0 +1,16 @@
+# scenarios/s4_hesitant_lead.yaml
+# Cognitive-only stress: Hesitant latent active, telemetry held at S1-nominal.
+# Used to isolate the cognitive substrate's contribution to ABORT verdict.
+# No Tier 1 sensor violation should ever fire here; if ABORT occurs, it is
+# attributable solely to the cognitive substrate via Tier 2 / divergence-driven arbitration.
+name: "S4 Hesitant Lead"
+cycles: 500
+seed: 42
+latent_risk_override: "hesitant"
+telemetry_overrides:
+  min_dist: 1.20
+  tcp_velocity: 0.05
+expected:
+  verdict: ABORT
+  rho_mean_lower: 0.60
+  D_mean_lower: 0.55

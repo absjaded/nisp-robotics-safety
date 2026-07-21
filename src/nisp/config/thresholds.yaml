@@ -1,0 +1,36 @@
+channels:
+  proximity:
+    threshold: 0.5
+    direction: "below"
+    unit: "meters"
+    proposition: "proximity_violation"
+    lean4_field: "proximity_violation"
+    source: "ISO 10218-2:2011, Table 1"
+    hysteresis_pct: 0.05
+
+  torque:
+    threshold: [330.0, 330.0, 150.0, 54.0, 54.0, 54.0]
+    direction: "above"
+    unit: "Nm"
+    proposition: "torque_exceedance"
+    lean4_field: "torque_violation"
+    source: "UR10e datasheet, joint 3 rated torque"
+    hysteresis_pct: 0.05
+
+  geofence:
+    threshold: 0.5
+    direction: "above"
+    unit: "flag"
+    proposition: "geofence_breach"
+    lean4_field: "geofence_violation"
+    source: "Workspace volume definition; zone_status is 0/1 flag from external geofence manager"
+    hysteresis_pct: 0.05
+
+  velocity:
+    threshold: 0.25
+    direction: "above"
+    unit: "m/s"
+    proposition: "velocity_violation"
+    lean4_field: "velocity_violation"
+    source: "ISO 10218-1:2011, max TCP speed"
+    hysteresis_pct: 0.05

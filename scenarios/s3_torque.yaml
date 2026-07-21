@@ -1,0 +1,16 @@
+# S3 Torque Exceedance: joint 0 torque > 330 Nm rated limit.
+# Expected: ABORT on torque_exceedance. Note: requires tau override in the
+# runner since L0 reads data.qfrc_actuator (which is 0 unless a controller runs).
+name: "S3 Torque"
+cycles: 500
+seed: 42
+telemetry_overrides:
+  min_dist: 1.00
+  tcp_velocity: 0.10
+  zone_status: 0
+  tau_override: [350.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+expected:
+  verdict: ABORT
+  primary_trigger: torque_exceedance
+  rho_mean: 1.0
+  D_mean_lower: 0.30

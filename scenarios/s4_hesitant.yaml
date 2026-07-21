@@ -1,0 +1,12 @@
+# scenarios/s4_hesitant.yaml
+name: "S4 Hesitant"
+cycles: 500
+seed: 42
+latent_risk_override: "hesitant"
+telemetry_overrides:
+  min_dist: 0.35
+  tcp_velocity: 0.20
+expected:
+  verdict: ABORT
+  rho_mean_lower: 0.60
+  D_mean_lower: 0.55

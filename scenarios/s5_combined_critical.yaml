@@ -1,0 +1,17 @@
+# S5 Combined Critical: proximity + torque + velocity all violating simultaneously,
+# with CRITICAL latent. Highest dissonance scenario — multiple Tier 1 triggers.
+# ISO 10218-2 priority: proximity > geofence > torque > velocity → primary = proximity.
+name: "S5 Combined Critical"
+cycles: 500
+seed: 42
+latent_risk_override: "critical"
+telemetry_overrides:
+  min_dist: 0.20       # proximity violation
+  tcp_velocity: 0.40   # velocity violation
+  zone_status: 1       # geofence breach
+  tau_override: [350.0, 0.0, 0.0, 0.0, 0.0, 0.0]  # torque exceedance
+expected:
+  verdict: ABORT
+  primary_trigger: proximity_violation  # ISO priority 1
+  rho_mean: 1.0
+  D_mean_lower: 0.50

@@ -1,0 +1,14 @@
+# S2 Geofence Breach: end-effector exits permitted workspace (zone_status=1).
+# Expected: ABORT on geofence_breach, Tier 1 trigger_reason=tier1_violation.
+name: "S2 Geofence"
+cycles: 500
+seed: 42
+telemetry_overrides:
+  min_dist: 1.00       # safe (no proximity violation)
+  tcp_velocity: 0.10   # safe (no velocity violation)
+  zone_status: 1       # geofence breached
+expected:
+  verdict: ABORT
+  primary_trigger: geofence_breach
+  rho_mean: 1.0
+  D_mean_lower: 0.30

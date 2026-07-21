@@ -1,0 +1,11 @@
+# scenarios/s1_nominal.yaml
+name: "S1 Nominal"
+cycles: 500
+seed: 42
+telemetry_overrides:
+  min_dist: 1.20
+  tcp_velocity: 0.05
+expected:
+  verdict: PROCEED
+  rho_mean: 1.0
+  D_mean_upper: 0.10
