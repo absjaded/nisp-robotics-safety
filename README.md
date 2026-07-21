@@ -1,6 +1,6 @@
 # In-Silico Robotics Safety Stack
 
-NISP is an earlier robotics safety project. It uses a simulated cognitive-side signal, typed evidence contracts, Lean 4 proof discharge, and per-cycle certificate hashes to make robot safety decisions auditable.
+NISP is on robotics safety. It uses a simulated cognitive-side signal, typed evidence contracts, Lean 4 proof discharge, and per-cycle certificate hashes to make robot safety decisions auditable.
 
 ## What It Shows
 
@@ -18,11 +18,6 @@ NISP is an earlier robotics safety project. It uses a simulated cognitive-side s
 - UCF-Crime road-accident probe: selected SVM-RBF AUC about 0.827 on 53 clips.
 - Certificate audit: 53/53 UCF-Crime certificates re-derived from committed evidence.
 
-## What It Does Not Claim
-
-- It is not a human neural collection.
-- It does not prove the current measurement phenomenon.
-
 ## Files
 
 - `src/`: typed contracts, layer implementations, verifier bridge, certificate logic.
@@ -30,7 +25,3 @@ NISP is an earlier robotics safety project. It uses a simulated cognitive-side s
 - `scenarios/`: stress-test scenario definitions.
 - `results/` and `artifacts/results/`: retained result summaries.
 - `tests/`: unit and pipeline tests.
-
-## Reproducibility Note
-
-This prepared bundle removes large MuJoCo model assets, local virtual environments, render arrays, raw latent payloads, caches, and local discussion folders. It preserves source, tests, scenarios, small result files, and proof files.
