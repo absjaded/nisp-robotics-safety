@@ -1,0 +1,41 @@
+MIT License
+
+Copyright (c) 2026 NISP Engine contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## Third-party data
+
+This repository's `artifacts/latents/` directory contains 1024-dimensional
+DiFuMo projections derived from frames of the UCF-Crime dataset
+(https://www.crcv.ucf.edu/projects/real-world). The original UCF-Crime
+dataset is released for non-commercial research use only. Latents in this
+repo are derivatives shipped to enable reproducibility of the published
+results; downstream commercial use of the underlying surveillance video
+data is not granted by this MIT license.
+
+## Third-party models
+
+The pipeline uses `facebook/tribev2` from
+https://github.com/facebookresearch/TRIBEv2, distributed under its own
+license (see TRIBEv2 repository). NISP code in this repo does not
+redistribute TRIBE v2 weights; they are downloaded at runtime from the
+HuggingFace Hub.
