@@ -1,0 +1,248 @@
+{
+  "toolchain": "leanprover/lean4:v4.16.0",
+  "lean_version": "Lean (version 4.16.0, x86_64-w64-windows-gnu, commit 128a1e6b0a82, Release)",
+  "library_build": {
+    "command": [
+      "lake",
+      "build"
+    ],
+    "returncode": 0,
+    "seconds": 4.995576600020286,
+    "stdout": "\u00e2\u0153\u201d [2/4] Built NISPAxioms.Basic\n\u00e2\u0153\u201d [3/4] Built NISPAxioms\nBuild completed successfully.\n",
+    "stderr": ""
+  },
+  "all_states_compilation": {
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "AllStates.lean"
+    ],
+    "returncode": 0,
+    "seconds": 3.0697074999916367,
+    "stdout": "",
+    "stderr": ""
+  },
+  "states_verified": 16,
+  "cases": [
+    {
+      "state": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "policy_verdict": "PROCEED",
+      "source_sha256": "f303f25a22b45ef56d8ed411ca22cba2f1c0da71549ffb25a22b35d12b9aea28",
+      "cache_matches_source": true,
+      "cache_lookup_ms": 0.001600012183189392
+    },
+    {
+      "state": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "policy_verdict": "ABORT",
+      "source_sha256": "0bc5ddbb8cd38f0a9161320d3376ed820711a6e03c7dcf1e4ae3241fc45b023e",
+      "cache_matches_source": true,
+      "cache_lookup_ms": 0.0012999807950109243
+    },
+    {
+      "state": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "policy_verdict": "ABORT",
+      "source_sha256": "89a2f91d4ab3db6a701774e002250db69eed042adcce3d8647fc03367528bc9b",
+      "cache_matches_source": true,
+      "cache_lookup_ms": 0.000700005330145359
+    },
+    {
+      "state": [
+        false,
+        false,
+        true,
+        true
+      ],
+      "policy_verdict": "ABORT",
+      "source_sha256": "336f53ad317ca7fbef11573ff905ba7055a7fae133ef69cdb24767c59b802904",
+      "cache_matches_source": true,
+      "cache_lookup_ms": 0.000500003807246685
+    },
+    {
+      "state": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "policy_verdict": "ABORT",
+      "source_sha256": "a3d6a3b3ed3acbb6456bec443395c14b93db31d95f325642a093dee996e154f4",
+      "cache_matches_source": true,
+      "cache_lookup_ms": 0.000600004568696022
+    },
+    {
+      "state": [
+        false,
+        true,
+        false,
+        true
+      ],
+      "policy_verdict": "ABORT",
+      "source_sha256": "580446764213b21c974b1b6dc0fef6244b7b534b876508437998c53f1dcc33e0",
+      "cache_matches_source": true,
+      "cache_lookup_ms": 0.000900006853044033
+    },
+    {
+      "state": [
+        false,
+        true,
+        true,
+        false
+      ],
+      "policy_verdict": "ABORT",
+      "source_sha256": "c3a82b491b280dc33bbb3e5c29d2ffeb35468927b5201cb47da78a9fe666b4cd",
+      "cache_matches_source": true,
+      "cache_lookup_ms": 0.000600004568696022
+    },
+    {
+      "state": [
+        false,
+        true,
+        true,
+        true
+      ],
+      "policy_verdict": "ABORT",
+      "source_sha256": "7603b4ca162ac0b923088d1a3cbf6d3be608fd17a1ce4f673f4fe33073f1a3e9",
+      "cache_matches_source": true,
+      "cache_lookup_ms": 0.000400003045797348
+    },
+    {
+      "state": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "policy_verdict": "ABORT",
+      "source_sha256": "0c2308aea01642ad729e73aad7be1bf604272cb5e892036135957be38ca54b87",
+      "cache_matches_source": true,
+      "cache_lookup_ms": 0.000500003807246685
+    },
+    {
+      "state": [
+        true,
+        false,
+        false,
+        true
+      ],
+      "policy_verdict": "ABORT",
+      "source_sha256": "c4ec2b6c6374eac44161bb50ef737384e9522bbbff328f3d21ae9b4133e97a19",
+      "cache_matches_source": true,
+      "cache_lookup_ms": 0.000400003045797348
+    },
+    {
+      "state": [
+        true,
+        false,
+        true,
+        false
+      ],
+      "policy_verdict": "ABORT",
+      "source_sha256": "8292e4d9c08d10dd93e154b9cb6bebe2b43cb6fbb1ac8d586c7d6320704faeec",
+      "cache_matches_source": true,
+      "cache_lookup_ms": 0.000500003807246685
+    },
+    {
+      "state": [
+        true,
+        false,
+        true,
+        true
+      ],
+      "policy_verdict": "ABORT",
+      "source_sha256": "d150b6adda45cd9a9e3685f01c97a1b8c40c29a0906730476d8bfd3521597872",
+      "cache_matches_source": true,
+      "cache_lookup_ms": 0.000400003045797348
+    },
+    {
+      "state": [
+        true,
+        true,
+        false,
+        false
+      ],
+      "policy_verdict": "ABORT",
+      "source_sha256": "5441dc363f5c3d57883a7ef797faadcdfbc1c6b86140c44ddc6d538a40b5f205",
+      "cache_matches_source": true,
+      "cache_lookup_ms": 0.000400003045797348
+    },
+    {
+      "state": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "policy_verdict": "ABORT",
+      "source_sha256": "a6c31c690ecc60e26c3fac2be1ebdd4f284c4afec032ead1b5d0b11c022b9cb6",
+      "cache_matches_source": true,
+      "cache_lookup_ms": 0.000500003807246685
+    },
+    {
+      "state": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "policy_verdict": "ABORT",
+      "source_sha256": "527799047d22d3f4f8809bf27c84ba985161ee2c53ca6687b1d95ed3e434f616",
+      "cache_matches_source": true,
+      "cache_lookup_ms": 0.0004999747034162283
+    },
+    {
+      "state": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "policy_verdict": "ABORT",
+      "source_sha256": "f9f6c09c524010262ed9a5853347606eb9ac98585b630443c6a89d3c3440fd98",
+      "cache_matches_source": true,
+      "cache_lookup_ms": 0.000500003807246685
+    }
+  ],
+  "live_bridge_checks": [
+    {
+      "state": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "rho": 1.0,
+      "source_matches_cache": true,
+      "compilation_ms": 2826.4952000172343
+    },
+    {
+      "state": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "rho": 1.0,
+      "source_matches_cache": true,
+      "compilation_ms": 3067.7626999968197
+    }
+  ],
+  "compiled_file_sha256": "a3e52943d8eeeb69fe49e5005e83c3fd1485d9281e701f03a6097f3949c4dc7d",
+  "basic_policy_sha256": "c457096abddd92527acbf935c81ca3b54953df3d728899648c775eeecea3920b",
+  "scope": "Four supplied hard-constraint booleans. Warning-driven REPLAN is tested in Python."
+}

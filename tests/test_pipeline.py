@@ -12,19 +12,19 @@ symmetry), and R4-B1 (2 s Lean timeout) as a single integration failure.
 import numpy as np
 import pytest
 
-from src.nisp.core.orchestrator import NISPPipeline
-from src.nisp.core.contracts import TelemetryState
-from src.nisp.layers.l1_tribevx import TribevX
-from src.nisp.layers.l2_analysis import L2_PredicateDecoder
-from src.nisp.layers.evidence_solver import EvidenceSolver
-from src.nisp.layers.l4_bridge import LeanVerifier
-from src.nisp.layers.priority_arbiter import PriorityArbiter
+from nisp.pipeline import NISPPipeline
+from nisp.contracts import TelemetryState
+from nisp.warnings import WarningFixture
+from nisp.readout import PredicateReadout
+from nisp.evidence import EvidenceSolver
+from nisp.verification import LeanVerifier
+from nisp.policy import PriorityArbiter
 
 
 def _build_pipeline(seed: int = 42):
     # L0 is unused in these tests — we construct TelemetryState directly.
-    l1 = TribevX(seed=seed)
-    l2 = L2_PredicateDecoder(seed=seed)
+    l1 = WarningFixture(seed=seed)
+    l2 = PredicateReadout(seed=seed)
     l3 = EvidenceSolver()
     l4 = LeanVerifier()  # cache-backed by default, no subprocess
     l5 = PriorityArbiter()

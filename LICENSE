@@ -19,23 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-## Third-party data
-
-This repository's `artifacts/latents/` directory contains 1024-dimensional
-DiFuMo projections derived from frames of the UCF-Crime dataset
-(https://www.crcv.ucf.edu/projects/real-world). The original UCF-Crime
-dataset is released for non-commercial research use only. Latents in this
-repo are derivatives shipped to enable reproducibility of the published
-results; downstream commercial use of the underlying surveillance video
-data is not granted by this MIT license.
-
-## Third-party models
-
-The pipeline uses `facebook/tribev2` from
-https://github.com/facebookresearch/TRIBEv2, distributed under its own
-license (see TRIBEv2 repository). NISP code in this repo does not
-redistribute TRIBE v2 weights; they are downloaded at runtime from the
-HuggingFace Hub.

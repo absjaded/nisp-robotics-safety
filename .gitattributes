@@ -1,0 +1,4 @@
+* text=auto eol=lf
+*.gz binary
+results/** -text -whitespace
+src/nisp/assets/** -text -whitespace

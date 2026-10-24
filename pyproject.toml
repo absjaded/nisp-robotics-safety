@@ -1,18 +1,29 @@
-[project]
-name = "nisp"
-version = "0.1.0"
-description = "Neuromorphic Intent-Safety Pipeline"
-requires-python = ">=3.10"
-dependencies = [
-    "mujoco>=3.7.0",
-    "numpy>=2.2.3",
-    "pyyaml>=6.0.2",
-    "pytest>=8.0.0",
-]
-
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "nisp-decision"
+version = "0.1.0"
+description = "Inspectable robot decisions from sensor constraints and warning signals"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+dependencies = ["numpy>=1.24", "PyYAML>=6.0"]
+
+[project.optional-dependencies]
+test = ["pytest>=8.0"]
+
+[project.scripts]
+nisp = "nisp.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+namespaces = false
+
+[tool.setuptools.package-data]
+nisp = ["assets/config/*.yaml", "assets/scenarios/*.yaml", "assets/lean/*", "assets/lean/NISPAxioms/*.lean"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

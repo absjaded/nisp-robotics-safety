@@ -10,19 +10,19 @@ the result matches what PriorityArbiter stored in cert.
 import numpy as np
 import pytest
 
-from src.nisp.core.contracts import TelemetryState
-from src.nisp.core.orchestrator import NISPPipeline
-from src.nisp.crypto.merkle import merkle_root, verdict_merkle_root
-from src.nisp.layers.evidence_solver import EvidenceSolver
-from src.nisp.layers.l1_tribevx import TribevX
-from src.nisp.layers.l2_analysis import L2_PredicateDecoder
-from src.nisp.layers.l4_bridge import LeanVerifier
-from src.nisp.layers.priority_arbiter import PriorityArbiter
+from nisp.contracts import TelemetryState
+from nisp.pipeline import NISPPipeline
+from nisp.certificates import merkle_root, verdict_merkle_root
+from nisp.evidence import EvidenceSolver
+from nisp.warnings import WarningFixture
+from nisp.readout import PredicateReadout
+from nisp.verification import LeanVerifier
+from nisp.policy import PriorityArbiter
 
 
 def _build_pipeline(seed: int = 42) -> NISPPipeline:
-    l1 = TribevX(seed=seed)
-    l2 = L2_PredicateDecoder(p_dim=l1.P, seed=seed)
+    l1 = WarningFixture(seed=seed)
+    l2 = PredicateReadout(p_dim=l1.P, seed=seed)
     return NISPPipeline(
         l0=object(), l1=l1, l2=l2,
         l3=EvidenceSolver(), l4=LeanVerifier(), l5=PriorityArbiter(),

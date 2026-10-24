@@ -1,11 +1,11 @@
 import numpy as np
 import pytest
-from src.nisp.layers.l2_analysis import L2_PredicateDecoder
-from src.nisp.core.contracts import LatentVector, RiskState, PredicateDistribution
+from nisp.readout import PredicateReadout
+from nisp.contracts import LatentVector, RiskState, PredicateDistribution
 
 def test_l2_predicate_decoder_probes():
     # Setup
-    l2 = L2_PredicateDecoder(p_dim=200, k_probes=8)
+    l2 = PredicateReadout(p_dim=200, k_probes=8)
     # Assemble the nominal-block excitation before constructing the (frozen) latent.
     E_nominal = np.zeros(200)
     E_nominal[150:200] = 1.0

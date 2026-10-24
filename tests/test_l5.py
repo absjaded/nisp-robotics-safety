@@ -1,7 +1,7 @@
 import pytest
 import numpy as np
-from src.nisp.layers.priority_arbiter import PriorityArbiter
-from src.nisp.core.contracts import EvidenceState, SymbolicFact, ProofResult
+from nisp.policy import PriorityArbiter
+from nisp.contracts import EvidenceState, SymbolicFact, ProofResult
 
 def test_arbiter_abort():
     arbiter = PriorityArbiter()

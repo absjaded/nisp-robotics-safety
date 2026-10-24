@@ -1,7 +1,7 @@
 import pytest
 import numpy as np
-from src.nisp.layers.evidence_solver import EvidenceSolver
-from src.nisp.core.contracts import TelemetryState
+from nisp.evidence import EvidenceSolver
+from nisp.contracts import TelemetryState
 
 def test_evidence_solver_nominal():
     solver = EvidenceSolver()

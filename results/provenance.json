@@ -1,0 +1,238 @@
+{
+  "historical_source_commit": "d2ebea67707fa7c51bb91149f839d886b9c5f9d0",
+  "historical_source_manifest": [
+    {
+      "path": "lean4_project/lakefile.lean",
+      "sha256": "3ca79fee60e7c573d7e5e7ea6d088742ae495d350ad04448e7e3c61b3bc3d5ef"
+    },
+    {
+      "path": "lean4_project/lean-toolchain",
+      "sha256": "75ff4a128643feecf7bfb8f4e4508e82ee401867dd34c585b02eb1981862749a"
+    },
+    {
+      "path": "lean4_project/NISPAxioms/Basic.lean",
+      "sha256": "7233e1a7843eb37dde563c72341f0ad9fb68e9ecae12752d24544ae45c547b6f"
+    },
+    {
+      "path": "lean4_project/NISPAxioms.lean",
+      "sha256": "abbe2ed0ade85346fd0b36b94a2f76644aedfb825d25a34a1462dc6068b935cc"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "f42ace0a7762bacc8344ac50f2cbd04685484065730fedff3c14be495c5a403e"
+    },
+    {
+      "path": "scenarios/s1_nominal.yaml",
+      "sha256": "7bdc03a485e686254a3a0124eca0250a46814d4678dc7580f29b6953481364d3"
+    },
+    {
+      "path": "scenarios/s2_geofence.yaml",
+      "sha256": "6377b112b6f13d559ad0b2f61ceb59084a00f8cb499903eef4331bb3a35ac96d"
+    },
+    {
+      "path": "scenarios/s3_torque.yaml",
+      "sha256": "9f13289954883e22bb50ba0589a648ec966ca2fd01f54b744cbe3d409f648dcc"
+    },
+    {
+      "path": "scenarios/s4_hesitant.yaml",
+      "sha256": "5776347421ccecd1d6006f38feede2418e1d80b44ae8f483c2403ed900d52271"
+    },
+    {
+      "path": "scenarios/s4_hesitant_lead.yaml",
+      "sha256": "e0e7a03fcf7ba83fbe7dd0d21044bd87a8d3d96a0dbde1f9469cb98b25844603"
+    },
+    {
+      "path": "scenarios/s5_combined_critical.yaml",
+      "sha256": "2a564bd5b0314c8a651b03339947ac22bd74dcf311862a699528644da8e4bf59"
+    },
+    {
+      "path": "scripts/run_scenario.py",
+      "sha256": "43cd65fcf76935828aa5e45289dabe5aa8f245575791fe4aa9273dfecb6a75bc"
+    },
+    {
+      "path": "src/nisp/config/predicates.yaml",
+      "sha256": "882c015d6ad5241a59c4f939bbbc4ce11e1cc74a43e13977d7522b011161fe0a"
+    },
+    {
+      "path": "src/nisp/config/thresholds.yaml",
+      "sha256": "f93120cf8bd072d68f018e3ba746c7791f2c5963cefc0c7279930a56da36c6f5"
+    },
+    {
+      "path": "src/nisp/core/contracts.py",
+      "sha256": "f29d7acd36d869f8c369ffef5be89e89567a08f4b27a9a60dad810a18b9fa652"
+    },
+    {
+      "path": "src/nisp/core/logger.py",
+      "sha256": "2fa5a6796a6e0ab9efa38ad7406ed491cb01058c96d01cf13d66646632e441e2"
+    },
+    {
+      "path": "src/nisp/core/orchestrator.py",
+      "sha256": "2933e8106cc6dde83d39d0da69ea28ea8a7355609e7c4c5b87ab913202cf70d1"
+    },
+    {
+      "path": "src/nisp/crypto/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/nisp/crypto/merkle.py",
+      "sha256": "d469798563258ebe8fc4e09907b750f873e0403b036459bf1233c41081f26a93"
+    },
+    {
+      "path": "src/nisp/interpret/__init__.py",
+      "sha256": "f7cd2bbff23c91b455b61af76e0f202753db1d56954ffc31f806e4a2b1fc3b6d"
+    },
+    {
+      "path": "src/nisp/interpret/narrator.py",
+      "sha256": "f7bb55a558be6898347119e83fa1190edf3263392857f74ba788355f230abdc1"
+    },
+    {
+      "path": "src/nisp/layers/__init__.py",
+      "sha256": "a8172c4132aeebfd08817bf147e7451d908de18273dc2b3c61863bb736c85a55"
+    },
+    {
+      "path": "src/nisp/layers/evidence_solver.py",
+      "sha256": "7003f826917df871459e57feffa599159ca9dd6827751e7122d5ed18ffe1c910"
+    },
+    {
+      "path": "src/nisp/layers/l0_ingestion.py",
+      "sha256": "f6fae9bc734e0cf1d141940c21895ed6c60069e57b2880388a01467e233a7e35"
+    },
+    {
+      "path": "src/nisp/layers/l1_tribev2_real.py",
+      "sha256": "52bc34fead717761454757c5f7bb162a0e1a61f0419466652988cbacdebfbcd0"
+    },
+    {
+      "path": "src/nisp/layers/l1_tribevx.py",
+      "sha256": "d279dfb38fe54d7dfe388924085aadd4033fbcfd99f6e102c7f4584ce41c8935"
+    },
+    {
+      "path": "src/nisp/layers/l2_analysis.py",
+      "sha256": "f267f4e8e722d93b8a2d8f6de3cee70cad197f814cf610af1e2ef13a2f8db485"
+    },
+    {
+      "path": "src/nisp/layers/l2_nengo.py",
+      "sha256": "814ab803c8b7bef6f86298464e5291a025a353b6f9d4e8f438ae2cfcb3c5c00a"
+    },
+    {
+      "path": "src/nisp/layers/l4_bridge.py",
+      "sha256": "3b6b25ddc2ae14247c80e45ce8a5e71177d81c5a514f90f5793234aa486c7038"
+    },
+    {
+      "path": "src/nisp/layers/l4_cache.py",
+      "sha256": "dd95e7cdc1e694ff1ff0bd92fa49297facf78fc5065bbd5210b4403c7ec3a7a6"
+    },
+    {
+      "path": "src/nisp/layers/priority_arbiter.py",
+      "sha256": "e4ccfafcfb3097601f900fcd0ba9f819f3d1d135d4a565ac2abc4a4a13c5e71a"
+    },
+    {
+      "path": "src/nisp/learning/__init__.py",
+      "sha256": "8a0a8c7f1649638ccff90f8d0ebddf57b408522863713d793260e49b122b5880"
+    },
+    {
+      "path": "src/nisp/learning/ig_estimator.py",
+      "sha256": "c2ac1aae7a6286eb6b7d89d98c9e08cbc737c6091c911cc5d3eb12d321b803ba"
+    },
+    {
+      "path": "src/nisp/learning/oas.py",
+      "sha256": "c284a80df1635d00f86b137b66b2cd93ab11dfd59240c075b259459c520d682c"
+    },
+    {
+      "path": "tests/test_l2.py",
+      "sha256": "0076d380a54a7b29bff91e1708bd8e053f9956379c9ae08d4dd269656882b88a"
+    },
+    {
+      "path": "tests/test_l3.py",
+      "sha256": "dc2500872d746c41464dd50f95f5b17b0626d21c6a8d3066d686221b69b0f9d9"
+    },
+    {
+      "path": "tests/test_l4.py",
+      "sha256": "169dd451018eea4b1e395aead2ec7106d42721c20912d61f3b499b7598256703"
+    },
+    {
+      "path": "tests/test_l5.py",
+      "sha256": "7831c4da8a2a3c1fdc661d697a32b71a6290b63cfcede96c747340c385d8489b"
+    },
+    {
+      "path": "tests/test_merkle.py",
+      "sha256": "36e735cb9c4bd33deeac649d9070a8b51f3b8f55b3ab1342905217d633489ea8"
+    },
+    {
+      "path": "tests/test_pipeline.py",
+      "sha256": "263f4f6ec1daf8ff974991a5e732413cb5dc40ac3decd231d00a082408f70dfc"
+    }
+  ],
+  "mechanically_relocated_modules": [
+    {
+      "recovery_source": "stack/src/nisp/core/contracts.py",
+      "sha256": "27212e7ad025fcf54586f38c38069e851701f1e27337b9576117e392dac475c2",
+      "package_file": "src/nisp/contracts.py"
+    },
+    {
+      "recovery_source": "stack/src/nisp/core/orchestrator.py",
+      "sha256": "6108f8f49c732ed87bf21f936ecf1effae3eec2abf9c0928f1ddbf95a84e7894",
+      "package_file": "src/nisp/pipeline.py"
+    },
+    {
+      "recovery_source": "stack/src/nisp/core/validation.py",
+      "sha256": "91242e99c606b4a55dc4b4ae1d810b3978dc2e7e32b188a734da7451930634c7",
+      "package_file": "src/nisp/validation.py"
+    },
+    {
+      "recovery_source": "stack/src/nisp/core/logger.py",
+      "sha256": "61fccf47038413a92d144e54b1754484f0a980fd793e9cbbda7a9af34f9ff420",
+      "package_file": "src/nisp/logging.py"
+    },
+    {
+      "recovery_source": "stack/src/nisp/crypto/merkle.py",
+      "sha256": "d469798563258ebe8fc4e09907b750f873e0403b036459bf1233c41081f26a93",
+      "package_file": "src/nisp/certificates.py"
+    },
+    {
+      "recovery_source": "stack/src/nisp/interpret/narrator.py",
+      "sha256": "84297f03be18ddb7bbc49d7688636f81d38eb3462c0ff4858a2f1d669370c7d6",
+      "package_file": "src/nisp/narrator.py"
+    },
+    {
+      "recovery_source": "stack/src/nisp/layers/evidence_solver.py",
+      "sha256": "7003f826917df871459e57feffa599159ca9dd6827751e7122d5ed18ffe1c910",
+      "package_file": "src/nisp/evidence.py"
+    },
+    {
+      "recovery_source": "stack/src/nisp/layers/l1_tribevx.py",
+      "sha256": "53d6b30651952a9d094a1cc5643e132668796170c0bfa9364fd180a22ef16136",
+      "package_file": "src/nisp/warnings.py"
+    },
+    {
+      "recovery_source": "stack/src/nisp/layers/l2_analysis.py",
+      "sha256": "f267f4e8e722d93b8a2d8f6de3cee70cad197f814cf610af1e2ef13a2f8db485",
+      "package_file": "src/nisp/readout.py"
+    },
+    {
+      "recovery_source": "stack/src/nisp/layers/l4_bridge.py",
+      "sha256": "96eafa2e5f11b600732f6c4c24dd088046342ab05b443dbedadffe0102163d0e",
+      "package_file": "src/nisp/verification.py"
+    },
+    {
+      "recovery_source": "stack/src/nisp/layers/l4_cache.py",
+      "sha256": "dd95e7cdc1e694ff1ff0bd92fa49297facf78fc5065bbd5210b4403c7ec3a7a6",
+      "package_file": "src/nisp/proof_cache.py"
+    },
+    {
+      "recovery_source": "stack/src/nisp/layers/priority_arbiter.py",
+      "sha256": "e4ccfafcfb3097601f900fcd0ba9f819f3d1d135d4a565ac2abc4a4a13c5e71a",
+      "package_file": "src/nisp/policy.py"
+    },
+    {
+      "recovery_source": "stack/scripts/run_scenario.py",
+      "sha256": "74e38ad92ba216a042dfcc7a2daaab2d3b8cbbe78071fa632a4126548e39893b",
+      "package_file": "src/nisp/scenarios.py"
+    }
+  ],
+  "excluded": [
+    "UCF-derived features",
+    "TRIBE weights",
+    "MuJoCo assets",
+    "research recovery scripts"
+  ]
+}

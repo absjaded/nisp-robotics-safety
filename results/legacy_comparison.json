@@ -1,0 +1,31 @@
+{
+  "historical": {
+    "cycles": 18000,
+    "decision_digest_sha256": "7f4d0a38a8da945811c3233efc3a79c1bb9eac2314a513fa059d8ab28637975e",
+    "corrupt_inputs": {
+      "nonfinite_distance": {
+        "status": "accepted",
+        "action": "PROCEED"
+      },
+      "missing_torque_joint": {
+        "status": "accepted",
+        "action": "PROCEED"
+      }
+    }
+  },
+  "recovered": {
+    "cycles": 18000,
+    "decision_digest_sha256": "7f4d0a38a8da945811c3233efc3a79c1bb9eac2314a513fa059d8ab28637975e",
+    "corrupt_inputs": {
+      "nonfinite_distance": {
+        "status": "rejected",
+        "error": "min_dist: non-finite value"
+      },
+      "missing_torque_joint": {
+        "status": "rejected",
+        "error": "tau: expected shape (6,), got (5,)"
+      }
+    }
+  },
+  "finite_input_decisions_identical": true
+}

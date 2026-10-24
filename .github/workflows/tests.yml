@@ -1,0 +1,23 @@
+name: Tests
+
+on: [push, pull_request]
+
+permissions:
+  contents: read
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: python -m pip install '.[test]'
+      - run: python -m pytest -q
+      - run: nisp demo --output runs/demo
+      - run: nisp audit runs/demo
+      - run: nisp audit results

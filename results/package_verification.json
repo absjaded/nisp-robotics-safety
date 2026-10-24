@@ -1,0 +1,53 @@
+{
+  "tests_passed": 93,
+  "saved_record_audit": {
+    "records_checked": 18010,
+    "failed": 0
+  },
+  "fresh_replay_decisions_matching_retained_records": 18000,
+  "package_policy_states_verified": 16,
+  "installed_wheel_policy_states_verified": 16,
+  "installed_demo_audit": {
+    "records_checked": 10,
+    "failed": 0
+  },
+  "local_document_links_checked": 17,
+  "wheel": {
+    "file": "nisp_decision-0.1.0-py3-none-any.whl",
+    "bytes": 39005,
+    "sha256": "f50cfcf3820285065bec1050453e8b52e2f7864e1c1788c3cab81bb0b15d07de"
+  },
+  "source_file_sha256": {
+    "src/nisp/__init__.py": "6b822042f9c53e6d6fd54d84e7532ce2599444c641aeb1a0880fb9aea8992239",
+    "src/nisp/__main__.py": "3129adff95e0f38b87ab34cddfc27082c7892bcaec267ff5d40f160fdf55b44a",
+    "src/nisp/assets/config/predicates.yaml": "8f6eb75722f8139b4f9bc4e37e4c48a98025ff18b0575b22e402e65721a5eb85",
+    "src/nisp/assets/config/thresholds.yaml": "b90edee3fc6558d6558d8278ae0dc5abc0cf3c03cf54ae5680fa35e0c8d9d43d",
+    "src/nisp/assets/lean/lakefile.lean": "e99ddc92afb65fdca961e16f0d6f2dfb2e9699d56db3941467e9614ece2e0110",
+    "src/nisp/assets/lean/lean-toolchain": "b3f7d43e005c36e7980721171c8809899ec3c0bc338f35568f54606beb7149a8",
+    "src/nisp/assets/lean/NISPAxioms/Basic.lean": "c457096abddd92527acbf935c81ca3b54953df3d728899648c775eeecea3920b",
+    "src/nisp/assets/lean/NISPAxioms.lean": "24c6c1dcf315686f9c450362b46d604c4f1158dca914a44c2c88bac8f4f656b3",
+    "src/nisp/assets/scenarios/s1_nominal.yaml": "9ccb2ac21f0563ab2bffca744b68a8ec7f68e946379abdc9cd87fab6da6de5ac",
+    "src/nisp/assets/scenarios/s2_geofence.yaml": "0af756fc572bb4c33e9ae8a92bdca119ee9159f4fc2b1937d170a670874ec8dd",
+    "src/nisp/assets/scenarios/s3_torque.yaml": "bdd4f32702bc29f25abfe83e16913339fa04b950214dfe3807eae49399048426",
+    "src/nisp/assets/scenarios/s4_hesitant.yaml": "f682fb49ce7f0b18e36d587c18535c5d839cdf161d205fbedcd93832d7f0fdac",
+    "src/nisp/assets/scenarios/s4_hesitant_lead.yaml": "4720a09a90ae2e1b1f11ce989baa6e7b0d9324b37e8a8aaab05841e17fda8e6a",
+    "src/nisp/assets/scenarios/s5_combined_critical.yaml": "d301e6a94204d18b86c227197308342cc5b04436e933cf9a010a5a573b65e2f3",
+    "src/nisp/audit.py": "a2aa4dce24b4f5e2ea3d4a7af210356032bcf7cbbe86ef5c6a1549b58c1e7b28",
+    "src/nisp/certificates.py": "bd73ec23c8144bd1c060a2a18914fb547f0152e091bbea36b0c4740ad9563667",
+    "src/nisp/cli.py": "8c6ff56bdba646653debf284755cf26e820c650b16c8019c5200ace7bcebdadd",
+    "src/nisp/contracts.py": "2c0c5584176bd1cfad823a51577eecccdc81c51ab889d748d5098832aa3444dc",
+    "src/nisp/demo.py": "597e2e297ceb60836f50d39626a4d4581f3302f8b1a12e1800bbd9627991fc33",
+    "src/nisp/evidence.py": "1ff2229b3ef93ebb3dd2c0802f4f281eef9536cfc6930b419c8f3280e7f2da5c",
+    "src/nisp/logging.py": "1d599a6b4d7758d2c97ecc8016adc3dd67564cb6b305fa66c09a6b4e1d6ed2e2",
+    "src/nisp/narrator.py": "64ff04d7c12701b2f26f5e9fa937b6ebf947896881942b123d916ba1858ca42a",
+    "src/nisp/pipeline.py": "b15ef80fe86b5272c03a69732509f721e11104c9193d3fbf8b4ac7e3c9b7174f",
+    "src/nisp/policy.py": "b0e86d43cb5b90f4e44de9757f173fa40e982ee874c8c3ebdca3d0b05208804b",
+    "src/nisp/proof_cache.py": "7771649645b4ed68f28c02625febe04f32d8ffb3c91c67325d6f662af29466d6",
+    "src/nisp/qualification.py": "dbf4e4ade457d32f8bf9d3aad5e22badfd7cf758101a43b42e41c46dc0589b32",
+    "src/nisp/readout.py": "10123b8549bde4281757b755d7ac79e8a4e306bfc8f7b2235d6fd2573b74cbae",
+    "src/nisp/scenarios.py": "132a94b593ccd1741101eb26376cc2f235a4ca3f294729d363c043584a9ba15b",
+    "src/nisp/validation.py": "91242e99c606b4a55dc4b4ae1d810b3978dc2e7e32b188a734da7451930634c7",
+    "src/nisp/verification.py": "2247c0a39529752d909f6b55b363db08bfe28878ba5d71461fc84e0610799c33",
+    "src/nisp/warnings.py": "f5e46bc8d106d9aeb5825fd9707ea07bd44c418df11e21d9023ca422da8a84f2"
+  }
+}

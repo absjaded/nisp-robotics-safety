@@ -1,6 +1,6 @@
 import pytest
-from src.nisp.layers.l4_bridge import LeanVerifier
-from src.nisp.core.contracts import EvidenceState, SymbolicFact
+from nisp.verification import LeanVerifier
+from nisp.contracts import EvidenceState, SymbolicFact
 
 def test_lean_verifier():
     verifier = LeanVerifier()
