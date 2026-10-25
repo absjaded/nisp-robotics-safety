@@ -94,6 +94,8 @@ The core paths are [input validation](src/nisp/validation.py), [sensor evidence]
 
 The implemented contribution is an inspectable evidence-to-decision path: a warning can affect the decision, hard constraints retain priority, and the rule can be replayed against the trace. Establishing the warning's additional predictive value is a separate empirical question. Configured limits and timing budgets are prototype assumptions; physical deployment requires application-specific validation.
 
+The [relation to existing work](METHODS.md#relation-to-existing-work) places this decision interface alongside supervisory control and runtime assurance, with an explicit account of which part of the policy is checked.
+
 Code is available under the [MIT license](LICENSE).
 
 The [earlier integrated research snapshot](https://github.com/absjaded/nisp-robotics-safety/tree/d2ebea67707fa7c51bb91149f839d886b9c5f9d0)

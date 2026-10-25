@@ -73,6 +73,37 @@ Two historical expectations are preserved for inspection:
 
 The ordinary hesitant scenario has a distance of 0.35 m. That hard violation explains its ABORT even without the additional warning. No warning lead-time claim is inferred from this replay.
 
+## Relation to existing work
+
+Supervisory architectures provide a useful comparison for integrating learned
+components into a decision process. The
+[Neural Simplex Architecture](https://arxiv.org/abs/1908.00528)
+(Phan et al., 2020) uses a decision module to switch between a neural controller
+and a baseline controller, with switching conditions tied to recoverability of
+the physical system. It also studies retraining and return to the neural
+controller. This establishes a substantial precedent for keeping a learned
+component within an explicitly checked supervisory architecture.
+
+[A Formal Verification Framework for Runtime Assurance](https://ntrs.nasa.gov/citations/20230017350)
+(Slagel et al., 2024) verifies a Simplex framework using hybrid programs in PVS,
+including discrete decisions, continuous dynamics and monitor sampling.
+NISP's released formal object is the hard-constraint policy on four supplied
+booleans. The warning-driven REPLAN rule and trace consistency have their
+separate Python checks. The supplied-input policy and a closed-loop physical
+system have different proof obligations.
+
+NISP contributes a compact implementation for inspecting that decision
+boundary. The controlled warning intervention holds telemetry fixed and
+changes PROCEED to REPLAN; a hard violation takes priority in either warning
+condition. The package also rejects malformed inputs and replays decisions
+against their evidence records. These cases let a developer inspect the
+receiving policy before attaching a learned warning source.
+
+The original application sought warnings with useful information beyond
+telemetry. A matched held-out comparison of telemetry-only, warning-only and
+combined predictors would test that informational premise. The current replay
+qualifies the decision interface on supplied inputs.
+
 ## Records and provenance
 
 The inherited input certificate hashes `(rho, D, facts, Z)`. It binds those inputs but omits the selected action. The audit additionally replays the Python decision rule and checks the canonical proof-source hash. Compact decision traces also carry a digest of the entire record. These are consistency checks with no signer authentication.
